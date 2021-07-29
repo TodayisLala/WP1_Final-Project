@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/photos/plain-colored-print-of-the-vietnam-flag-picture-id462395835?k=6&m=462395835&s=612x612&w=0&h=k4ZJeOuez-mmIv9pRwgvtKJoNmS4LvbE-OYVtSZWBFM=" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Hanoi</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="#main-head"><img src="https://media.istockphoto.com/photos/plain-colored-print-of-the-vietnam-flag-picture-id462395835?k=6&m=462395835&s=612x612&w=0&h=k4ZJeOuez-mmIv9pRwgvtKJoNmS4LvbE-OYVtSZWBFM=" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#main-head">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#food">Foods</a></li>
+                        <li><a href="#travel">Travels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <img src="https://www.tripsavvy.com/thmb/cuFGaKKIO9SR8134XArWgAd9epk=/1202x1202/smart/filters:no_upscale()/ho_chi_minh_mausoleum-5927c27b5f9b585950712069.jpg">
+        <div class="content-head container">
+            <div>
+                <h1>This is</h1>
+                <div class="content-title-header">
+                    <h1>HO CHI MINH </h1>
+					<h1>MAUSOLEUM </h1>
+				
+      
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+			<p>Ho Chi Minh Mausoleum in Ba Dinh Square is one of the most visited attractions in Hanoi. It is the final resting place of Ho Chi Minh, the most iconic and popular leader of Vietnam, known to his people as ‘Uncle Ho’. His body is preserved here in a glass case at the Ho Chi Minh Mausoleum in central Hanoi (albeit against his wishes).</p>
+			<p>For visitors, a trip to Uncle Ho’s final resting place can be an extraordinary experience as it is not just an average attraction; it’s a part of a unique history.</p>
+			<img src="http://static.asiawebdirect.com/m/bangkok/portals/vietnam/homepage/hanoi/hochiminh-mausoleum/allParagraphs/BucketComponent/ListingContainer/0/image/ho-chi-minh-mausoleum.jpg">
+			<p>Started in 1973, the construction of the mausoleum was modeled on Lenin's mausoleum in Russia and was first open to the public in 1975. The granite building meant a great deal for many locals as it ensures that their beloved leader ‘lives on forever’.</p>
+			<p>Security is tight and visitors should dress with respect (no shorts, sleeveless shirts and miniskirts) and everyone has to deposit their bags and cameras before getting in. Visitors are not allowed to stop and hold the constant queue up as the place is constantly busy. Uncle Ho’s remains are sent yearly to Russia for maintenance therefore the mausoleum is closed usually from October onwards. It’s best to recheck with your hotel tour desk before visiting. Admission is free but donations are accepted.</p>
+			<img src="http://static.asiawebdirect.com/m/.imaging/724x482/website/bangkok/portals/vietnam/homepage/hanoi/hochiminh-mausoleum/placeInfoParagraphs/01/image.jpg">
+				
+               
+			</div>
+        </div>
+    </section>
+
+     <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14895.578961344374!2d105.8346667!3d21.0368973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x620e85c2cfe14d4c!2sHo%20Chi%20Minh%20Mausoleum!5e0!3m2!1sen!2sjp!4v1627492120130!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Dinh Thi Lan Anh</h1>
+            <h2>M20W7292</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>
